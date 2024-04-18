@@ -1,5 +1,4 @@
 import './styles.css';
-import "bootstrap/dist/css/bootstrap.min.css";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import BooksList from "./components/book_list.component";
 import BookCreate from "./components/book_create.component";
