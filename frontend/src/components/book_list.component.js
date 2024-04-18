@@ -60,6 +60,7 @@ export default function BooksList() {
   
     return (
       <div className='BookList'>
+        <div className='container'>
           <div className='row'>
             <div className='col-md-12'>
               <br />
@@ -95,6 +96,7 @@ export default function BooksList() {
               />
             );
           })}
+        </div>
         </div>
       </div>
     );
