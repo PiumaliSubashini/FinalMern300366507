@@ -34,8 +34,8 @@ const Book = (props) => (
 export default function BooksList() {
     const [books, setBookList] = useState([]);
     useEffect(() => {
-       const url = "http://localhost:5000";
-     // const url = "https://mern-final300366507-backend.vercel.app"
+      // const url = "http://localhost:5000";
+     const url = "https://final-mern300366507.vercel.app"
       axios
         .get(url)
         .then((response) => {
@@ -47,8 +47,8 @@ export default function BooksList() {
     }, []);
   
     const deleteBook = (id) => {
-       const url = "http://localhost:5000";
-     // const url = "https://mern-final300366507-backend.vercel.app"
+      // const url = "http://localhost:5000";
+      const url = "https://final-mern300366507.vercel.app"
       axios.delete(url + "/" + id)
         .then((response) => {
         setBookList(books.filter((el) => el._id !== id));
